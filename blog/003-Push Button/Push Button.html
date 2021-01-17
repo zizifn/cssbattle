@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Button</title>
+</head>
+
+<body>
+    <div class="back-rect"></div>
+    <div class="light-cycle cycle"></div>
+    <div class="center-cycle cycle"></div>
+    <div class="inner-cycle cycle"></div>
+    <style>
+        body {
+            background: #6592CF;
+            display: flex;
+            align-items: center;
+            width: 400px;
+            height: 300px;
+            justify-content: center;
+        }
+
+        .back-rect {
+            background: #243D83;
+            animation: base 1s ease 0s 1 normal forwards;
+        }
+
+        .cycle {
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .light-cycle {
+            animation: light-cycle 3s ease 1s 1 normal both;
+        }
+
+        .center-cycle {
+            background: #243D83;
+            animation: center-cycle 2s ease 4s 1 normal both;
+        }
+
+        .inner-cycle {
+            background: #EEB850;
+            animation: inner-cycle 2s ease 6s 1 normal both;
+        }
+
+        @keyframes inner-cycle {
+            5% {
+                width: 50px;
+                height: 50px;
+                border-radius: 0px;
+            }
+
+            35% {
+                border-radius: 0px;
+            }
+
+            100% {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        @keyframes center-cycle {
+            5% {
+                background: red;
+                width: 150px;
+                height: 150px;
+                border-radius: 0px;
+            }
+
+            35% {
+                border-radius: 0px;
+            }
+
+            100% {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @keyframes light-cycle {
+            5% {
+                background: red;
+                width: 250px;
+                height: 250px;
+                border-radius: 0px;
+            }
+
+            35% {
+                border-radius: 0px;
+            }
+
+            100% {
+                background: #6592CF;
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        @keyframes base {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+
+            100% {
+                width: 300px;
+                height: 150px;
+            }
+        }
+    </style>
+</body>
+
+</html>

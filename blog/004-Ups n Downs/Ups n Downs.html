@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ups n Downs</title>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <style>
+        body {
+            background: #62306D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 300px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: #F7EC7D;
+        }
+
+        .box1 {
+            animation: box1 2s ease 1s 1 normal both;
+        }
+
+        .box2 {
+            animation: box2 2s ease 3s 1 normal both;
+        }
+
+        .box3 {
+            animation: box3 2s ease 5s 1 normal both;
+        }
+
+        @keyframes box3 {
+            0% {
+                background: rgb(51, 61, 5);
+            }
+
+            10% {
+                background: red;
+                transform: scale(1.5)
+            }
+
+            100% {
+                border-radius: 0% 0% 50% 50%;
+                transform: translateY(50%);
+            }
+        }
+
+        @keyframes box2 {
+            0% {
+                background: rgb(184, 218, 37);
+            }
+
+            10% {
+                background: red;
+                transform: scale(1.5)
+            }
+
+            100% {
+                border-radius: 50% 50% 0% 0%;
+                transform: translateY(-50%);
+            }
+        }
+
+        @keyframes box1 {
+            10% {
+                background: red;
+                transform: scale(1.5)
+            }
+
+            100% {
+                border-radius: 0% 0% 50% 50%;
+                transform: translateY(50%);
+            }
+        }
+    </style>
+</body>
+
+</html>
