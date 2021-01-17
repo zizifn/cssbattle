@@ -1,6 +1,6 @@
 # cssbattle
 
-My answer for cssbattle
+My answer for cssbattle, including animation explanation.
 
 ## [CSSBattle #1 Simply Square](./blog/001-Simply%20Square/SimplySquare.md)
 
