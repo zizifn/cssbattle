@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acid Rain</title>
+</head>
+
+<body>
+    <div class="cycle1"></div>
+    <div class="cycle2"></div>
+    <div class="cycle3"></div>
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <style>
+        body {
+            background: #0B2429;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 300px;
+        }
+
+        .cycle1 {
+            width: 120px;
+            height: 120px;
+            background: #F3AC3C;
+            animation: cycle1 2s ease 1s 1 normal both;
+        }
+
+        .cycle2 {
+            width: 120px;
+            height: 120px;
+            background: #998235;
+            animation: cycle2 2s ease 3s 1 normal both;
+        }
+
+        .cycle3 {
+            width: 120px;
+            height: 120px;
+            background: #F3AC3C;
+            animation: cycle3 2s ease 5s 1 normal both;
+        }
+
+        .rect1 {
+            position: absolute;
+            background: #F3AC3C;
+            animation: rect1 2s ease 7s 1 normal both;
+        }
+
+        .rect2 {
+            position: absolute;
+            background: #998235;
+            animation: rect2 2s ease 7s 1 normal both;
+        }
+
+        @keyframes rect2 {
+            10% {
+                width: 60px;
+                height: 60px;
+                background: red;
+            }
+
+            100% {
+                width: 60px;
+                height: 60px;
+                transform: translateY(-50%) translateX(50%);
+            }
+        }
+
+        @keyframes rect1 {
+            10% {
+                width: 60px;
+                height: 60px;
+                background: red;
+            }
+
+            100% {
+                width: 60px;
+                height: 60px;
+                transform: translateY(50%) translateX(-50%);
+            }
+
+        }
+
+        @keyframes cycle3 {
+            20% {
+                background: red;
+                /* transform: scale(1.5); */
+                border-radius: 50%;
+            }
+
+            100% {
+                border-radius: 50%;
+                transform: translateY(-50%) translateX(-50%);
+            }
+        }
+
+        @keyframes cycle2 {
+            20% {
+                background: red;
+                transform: scale(1.1);
+            }
+
+            100% {
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes cycle1 {
+            20% {
+                background: red;
+                /* transform: scale(1.5); */
+                border-radius: 50%;
+            }
+
+            100% {
+                border-radius: 50%;
+                transform: translateY(50%) translateX(50%);
+            }
+        }
+    </style>
+</body>
+
+</html>
