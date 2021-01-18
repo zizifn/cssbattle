@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Slice</title>
+</head>
+
+<body>
+    <div class="cycle"></div>
+    <style>
+        body {
+            background: #E3516E;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cycle {
+            animation: cycle 5s linear 0.5s 1 normal both;
+        }
+
+        @keyframes cycle {
+            0% {
+                border: 100px solid black;
+            }
+
+            20% {
+                border-bottom-color: #F7F3D7;
+                border-left-color: black;
+                border-right-color: black;
+                border-top-color: black;
+            }
+
+
+            40% {
+                border-bottom-color: #F7F3D7;
+                border-left-color: #51B5A9;
+                border-right-color: black;
+                border-top-color: black;
+            }
+
+            60% {
+                border-bottom-color: #F7F3D7;
+                border-left-color: #51B5A9;
+                border-right-color: transparent;
+                border-top-color: black;
+            }
+
+            80% {
+                border-bottom-color: #F7F3D7;
+                border-left-color: #51B5A9;
+                border-right-color: transparent;
+                border-top-color: #FADE8B;
+                border-radius: 0px;
+            }
+
+            90% {
+                border-radius: 100px;
+                transform: none;
+            }
+
+            100% {
+                transform: rotate(45deg);
+                border: 100px solid;
+                border-radius: 100px;
+                border-bottom-color: #F7F3D7;
+                border-left-color: #51B5A9;
+                border-right-color: transparent;
+                border-top-color: #FADE8B;
+            }
+        }
+    </style>
+</body>
+
+</html>
