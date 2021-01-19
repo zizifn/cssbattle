@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle
+    </title>
+</head>
+
+<body>
+    <label for="pet-select">Choose a pet:</label>
+
+    <select id="pet-select">
+        <option value="">--Please</option>
+        <option id="test" value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+    </select>
+    <ul>
+        <li>Buy milk</li>
+        <li>Take the dog for a walk</li>
+        <li>Exercise</li>
+        <li>Write code</li>
+        <li>Play music</li>
+        <li>Relax</li>
+    </ul>
+    <div>
+        <p>ddddd</p>
+    </div>
+    <style>
+        #test {
+            height: 50px;
+            width: 100px;
+        }
+
+        * {
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+
+        *::before {
+            border: 1px solid blue;
+        }
+
+        li {
+            position: relative;
+            list-style-type: none;
+            margin: 2px;
+            padding: 0.5em 0.5em 0.5em 2em;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            border-color: #009933;
+            border-style: solid;
+            border-width: 0 0.3em 0.25em 0;
+            height: 1em;
+            top: 1.3em;
+            left: 0.6em;
+            margin-top: -1em;
+            width: 0.5em;
+            transform: rotate(45deg);
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            /* border: 1px solid; */
+            /* overflow: hidden; */
+        }
+
+        div::before {
+            content: '1111';
+        }
+
+        div::
+    </style>
+
+</body>
+
+</html>

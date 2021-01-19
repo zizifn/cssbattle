@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafy Trail</title>
+</head>
+
+<body>
+    <div class="leaf"></div>
+    <style>
+        body {
+            background: #0B2429;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .leaf {
+            background: #F3AC3C;
+            animation: leaf 3s ease 0s 1 normal both;
+        }
+
+        @keyframes leaf {
+            0% {
+                width: 150px;
+                height: 150px;
+            }
+
+            30% {
+                transform: translateX(50px);
+                border-radius: 0px;
+            }
+
+            50% {
+                transform: translateX(50px);
+                border-radius: 67% 0;
+                box-shadow: none;
+            }
+
+            80% {
+                transform: translateX(50px);
+                border-radius: 67% 0;
+                box-shadow:
+                    -50px 0 #998235;
+            }
+
+            100% {
+                width: 150px;
+                height: 150px;
+                transform: translateX(50px);
+                border-radius: 67% 0;
+                box-shadow:
+                    -50px 0 #998235,
+                    -100px 0 #1A4341;
+            }
+
+        }
+
+        </body></html>
