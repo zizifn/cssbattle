@@ -1,0 +1,4 @@
+#shape-clip-pat {
+  float: left;
+  shape-outside: border-box circle(50px);
+}
