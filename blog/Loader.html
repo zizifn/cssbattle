@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader</title>
+</head>
+
+<body>
+    <div class="contianer">
+        <div class="base">
+            <!-- <div></div>
+            <div></div>
+            <div></div>
+            <div></div> -->
+        </div>
+    </div>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .contianer {
+            border: 1px solid red;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            background-color: bisque;
+        }
+
+        .base {
+            width: 200px;
+            height: 1px;
+            background-color: blue;
+            border-radius: 200px 0 0 0;
+            /* background: linear-gradient(36deg, #1924c2 42.34%, transparent 42.34%); */
+            animation: test 60s linear 0s infinite normal forwards;
+            transform-origin: 100% 100%;
+        }
+
+        @keyframes test {
+            0% {
+                transform: translateY(199px) rotate(45deg);
+            }
+
+            100% {
+                transform: translateY(199px) rotate(405deg);
+            }
+        }
+
+
+
+        /* div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+        } */
+    </style>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
