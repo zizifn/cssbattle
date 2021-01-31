@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forking Crazy</title>
+</head>
+
+<body>
+    <div class="sprike1"></div>
+    <div class="fork-body"></div>
+    <div class="handle"></div>
+
+    <style>
+        body {
+            background: #6592CF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+            margin: 0;
+        }
+
+        .sprike1 {
+            height: 110px;
+            width: 20px;
+            animation:
+                sprike2 4s ease 0s 1 normal both;
+        }
+
+        @keyframes sprike2 {
+            0% {
+                background: red;
+            }
+
+            20% {
+                border-radius: 10px 10px 10px 10px;
+                transform: none;
+            }
+
+            40% {
+                border-radius: 10px 10px 10px 10px;
+                transform: translateY(10px);
+                box-shadow: none;
+            }
+
+            70% {
+                transform: translateY(10px);
+                border-radius: 10px 10px 10px 10px;
+                background: #6592CF;
+                box-shadow:
+                    -60px 0 #060F55,
+                    -40px 0 #6592CF,
+                    -20px 0 #060F55;
+            }
+
+            100% {
+                transform: translateY(10px);
+                border-radius: 10px 10px 10px 10px;
+                background: #6592CF;
+                box-shadow:
+                    -60px 0 #060F55,
+                    -40px 0 #6592CF,
+                    -20px 0 #060F55,
+                    20px 0 #060F55,
+                    40px 0 #6592CF,
+                    60px 0 #060F55;
+            }
+        }
+
+        .fork-body {
+            height: 100px;
+            width: 140px;
+            background: #060F55;
+            animation: fork-body 1s ease 4s 1 normal forwards;
+        }
+
+        @keyframes fork-body {
+            0% {
+                background: red;
+            }
+
+            50% {
+                border-radius: 0px;
+            }
+
+            100% {
+                border-radius: 0 0 70px 70px;
+                margin-bottom: -1px;
+            }
+        }
+
+        .handle {
+            height: 51px;
+            width: 20px;
+            background: #060F55;
+        }
+    </style>
+</body>
+
+</html>
